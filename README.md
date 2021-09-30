@@ -3,7 +3,7 @@
 - [What is this project ?](https://github.com/SahanYarar/REST-API#what-is-this-project-)
 - [HTTP Verbs](https://github.com/SahanYarar/REST-API#http-verbs)
 - [Request and Response Examples](https://github.com/SahanYarar/REST-API#request-and-response-examples)
-- [Schemas of User and Account]([https://github.com/SahanYarar/REST-API#schemas-of-user-and-account)
+- [Schemas of User and Account](https://github.com/SahanYarar/REST-API#schemas-of-user-and-account)
 - [HTTP Status Codes](https://github.com/SahanYarar/REST-API#http-status-codes)
 - [Testing Codes](https://github.com/SahanYarar/REST-API#testing-codes)
 
@@ -29,14 +29,14 @@ Default values for admin are id,created_at and updated_at.User and account are l
 
 ## Request and Response Examples
 1. User Examples
-     - [POST /users/create_user](https://github.com/SahanYarar/REST-API#post-/users/create_user)
-     - [PUT /users/update/{user_id}](https://github.com/SahanYarar/REST-API#put-/users/update/{user_id})
-     - [GET /users/{user_id}](https://github.com/SahanYarar/REST-API#get-/users/{user_id})
+     - [POST /users/create_user](https://github.com/SahanYarar/REST-API#post-userscreate_user)
+     - [PUT /users/update/{user_id}](https://github.com/SahanYarar/REST-API#put-usersupdateuser_id)
+     - [GET /users/{user_id}](https://github.com/SahanYarar/REST-API#get-usersuser_id)
      
     
 2. Account Examples
-     - [POST /accounts/create_account](https://github.com/SahanYarar/REST-API#post-/accounts/create_account)
-     - [PUT /accounts/update/{account_id}](https://github.com/SahanYarar/REST-API#put-/accounts/update/{account_id})
+     - [POST /accounts/create_account](https://github.com/SahanYarar/REST-API#post-accountscreate_account)
+     - [PUT /accounts/update/{account_id}](https://github.com/SahanYarar/REST-API#put-accountsupdateaccount_id)
      
     
 ## User Examples    
