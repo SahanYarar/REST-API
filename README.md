@@ -206,20 +206,24 @@ def database():
         db.close_all()
         
 def test_create_user(client, database):
-    response = client.post('/users/create_user', json={"username": "test_username", "email": "test@gmail.com"})
+    response = client.post('/users/create_user', json={"username": "test_username",
+                                                       "email": "test@gmail.com"})
     assert response.status_code == 201
     data = response.get_json()
     assert data["username"] == "test_username"
     assert data["is_admin"] == False
-    response1 = client.post('/users/create_user', json={"email": "test@gmail.com"})
+    response1 = client.post('/users/create_user',
+                           json={"email": "test@gmail.com"})
     assert response1.status_code == 201
     data1 = response1.get_json()
     assert data1["username"] == "Sahan"
     assert data1["email"] == "test@gmail.com"
     # bad_scenarios
-    response2 = client.post('/users/create_user', json={"username": "test_username"})
+    response2 = client.post('/users/create_user',
+                           json={"username": "test_username"})
     assert response2.status_code == 400
-    response3 = client.post('/users/create_user', json={"username": "test_username", "email": "testgmail.com"})
+    response3 = client.post('/users/create_user',
+                           json={"username": "test_username", "email": "testgmail.com"})
     assert response3.status_code == 400        
 ```
 
